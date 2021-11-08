@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guilasttime.OMenuController">
+   <children>
+      <VBox alignment="CENTER" layoutX="279.0" layoutY="72.0" prefHeight="307.0" prefWidth="243.0" spacing="45.0" style="-fx-background-color: #CCCCCC;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#oBookButtonHit" text="Books">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#ownerCustButtonHit" text="Customers">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="35.0" mnemonicParsing="false" onAction="#ownerMenuButtonHit" text="Logout">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Text layoutX="340.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Owner Menu">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

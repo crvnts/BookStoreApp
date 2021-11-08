@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guilasttime.OwnerCustScreenController">
+   <children>
+      <HBox prefHeight="291.0" prefWidth="804.0">
+         <children>
+            <TableView fx:id="otableView" prefHeight="179.0" prefWidth="804.0">
+              <columns>
+                <TableColumn fx:id="oUNColumn" prefWidth="75.0" text="Username" />
+                <TableColumn fx:id="oPassColumn" prefWidth="75.0" text="Password" />
+                  <TableColumn fx:id="oPointsColumn" prefWidth="75.0" text="Points" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="291.0" prefHeight="87.0" prefWidth="804.0" spacing="25.0">
+         <children>
+            <TextField fx:id="oUN" promptText="Username" />
+            <TextField fx:id="oPass" promptText="Password" />
+            <Button mnemonicParsing="false" onAction="#addHit" text="Add" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" layoutY="364.0" prefHeight="87.0" prefWidth="804.0" spacing="135.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#deleteHit" text="Delete" />
+            <Button mnemonicParsing="false" onAction="#ownerCustScreenBackHit" text="Back" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

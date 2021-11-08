@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guilasttime.ViewCartController">
+   <children>
+      <VBox prefHeight="450.0" prefWidth="800.0">
+         <children>
+            <TableView fx:id="ctableView" prefHeight="281.0" prefWidth="800.0">
+              <columns>
+                <TableColumn fx:id="ctitleColumn" prefWidth="75.0" text="Title" />
+                <TableColumn fx:id="cpriceColumn" prefWidth="75.0" text="Price" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <HBox alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="800.0" VBox.vgrow="NEVER">
+               <children>
+                  <TextField fx:id="ctotalbox" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="150.0" prefWidth="800.0" spacing="25.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#removeCartHit" text="Remove from Cart" />
+                  <Button mnemonicParsing="false" onAction="#buyButtonHit" text="Buy" />
+                  <Button mnemonicParsing="false" onAction="#RedbuyButtonHit" text="Redeem Points and Buy" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#backButtonHit" text="Back" />
+               </children>
+               <padding>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
